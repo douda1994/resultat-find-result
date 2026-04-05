@@ -10,6 +10,159 @@ include('db.php');
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+  /* ===== General ===== */
+  body {
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* ===== Title ===== */
+  h2.text-center {
+    color: #4fc3f7;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 10px;
+  }
+
+  /* ===== Container ===== */
+  .container {
+    background-color: #112240;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+
+  /* ===== Buttons ===== */
+  .btn-primary {
+    background-color: #1565c0;
+    border-color: #1565c0;
+  }
+  .btn-primary:hover {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+  }
+  .btn-success {
+    background-color: #00897b;
+    border-color: #00897b;
+  }
+  .btn-warning {
+    background-color: #f57f17;
+    border-color: #f57f17;
+  }
+  .btn-danger {
+    background-color: #c62828;
+    border-color: #c62828;
+  }
+
+  /* ===== Table ===== */
+  .table {
+    color: #e0e0e0;
+    border-color: #1565c0;
+  }
+  .table thead tr {
+    background-color: #1565c0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .table-bordered {
+    border: 1px solid #1565c0;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #0a1929;
+  }
+  .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #112240;
+  }
+  .table-hover > tbody > tr:hover {
+    background-color: #1a3a5c;
+    color: #4fc3f7;
+  }
+  td, th {
+    border-color: #1e3a5f !important;
+    vertical-align: middle !important;
+  }
+
+  /* ===== Modal ===== */
+  .modal-content {
+    background-color: #112240;
+    color: #e0e0e0;
+    border: 1px solid #1565c0;
+    border-radius: 10px;
+  }
+  .modal-header {
+    background-color: #1565c0;
+    border-radius: 10px 10px 0 0;
+  }
+  .modal-title {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .modal-footer {
+    border-top: 1px solid #1e3a5f;
+  }
+  .close {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  /* ===== Form ===== */
+  .form-control {
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    border: 1px solid #1565c0;
+    border-radius: 6px;
+  }
+  .form-control:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 5px rgba(79,195,247,0.4);
+    background-color: #0a1929;
+    color: #ffffff;
+  }
+  label {
+    color: #90caf9;
+    font-weight: 600;
+  }
+
+  /* ===== HR ===== */
+  hr {
+    border-color: #1565c0;
+  }
+
+  /* ===== DataTable ===== */
+  .dataTables_wrapper .dataTables_filter input {
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    border: 1px solid #1565c0;
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+  .dataTables_wrapper .dataTables_length select {
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    border: 1px solid #1565c0;
+    border-radius: 6px;
+  }
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_paginate {
+    color: #90caf9;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #90caf9 !important;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #1565c0 !important;
+    color: #fff !important;
+    border-radius: 4px;
+  }
+</style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
